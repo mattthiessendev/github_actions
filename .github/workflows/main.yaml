@@ -9,5 +9,7 @@ on:
 
 jobs:
   log:
-    run: |
-      echo 'You should only be seeing this when pushing to main!!'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log to Console
+      run: echo "You should only be seeing this when pushing to main!!"
