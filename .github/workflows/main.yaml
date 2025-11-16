@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Log to Console
-      run: echo "You should only be seeing this when pushing to main!!"
+        run: echo "You should only be seeing this when pushing to main!!"
