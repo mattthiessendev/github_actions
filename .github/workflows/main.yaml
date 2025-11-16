@@ -1,0 +1,13 @@
+name: Run on Push to Main
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      .github/**
+
+jobs:
+  log:
+    run: |
+      echo 'You should only be seeing this when pushing to main!!'
