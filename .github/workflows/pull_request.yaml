@@ -12,5 +12,16 @@ jobs:
   tsc_lint:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup node
+        uses: actions/setup-node@v4
+
+      - name: Install dependencies
+        working-directory: ts
+        run: yarn install
+
       - name: Lint tsc
-        run: npx tsc -b
+        working-directory: ts
+        run: npx tsc --noEmit
