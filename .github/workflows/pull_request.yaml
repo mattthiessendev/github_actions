@@ -9,3 +9,5 @@ jobs:
     steps:
       - name: Log to Console
         run: echo "You should only be seeing this on pull request create, updated, reopened"
+      - name: Test
+        run: echo "Hello"
