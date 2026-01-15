@@ -2,11 +2,10 @@ name: Run on Pull Request Create
 
 on:
   pull_request:
-    types: [ opened ]
 
 jobs:
   log:
     runs-on: ubuntu-latest
     steps:
       - name: Log to Console
-        run: echo "You should only be seeing this on pull request create"
+        run: echo "You should only be seeing this on pull request create, updated, reopened"
