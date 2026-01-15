@@ -9,3 +9,8 @@ jobs:
     steps:
       - name: Log to Console
         run: echo "You should only be seeing this on pull request create, updated, reopened"
+  tsc_lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lint tsc
+        run: npx tsc -b
