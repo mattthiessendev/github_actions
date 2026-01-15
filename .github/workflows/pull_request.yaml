@@ -24,4 +24,4 @@ jobs:
 
       - name: Lint tsc
         working-directory: ts
-        run: npx tsc --noEmit
+        run: yarn run build:dry
